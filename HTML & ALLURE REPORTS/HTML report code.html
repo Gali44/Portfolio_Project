@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Python Selenium Unittest Report</h2>
+                <p class='attribute'><strong>Test site: </strong>https://qasvus.wixsite.com/ca-marketing</p>
+                <p class='attribute'><strong>Browsers: </strong>Google Chrome, Mozilla Firefox, Microsoft Edge</p>
+                <p class='attribute'><strong>Type of testing: </strong>Positive</p>
+                <p class='attribute'><strong>Sections for testing: </strong>Main screen, video search, event booking, cart, online chat, subscription form</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 30, Pass: 18, Fail: 12</p>
+            <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>WINDOWS_10_CHROME</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">cart_shopping (cart smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+The title of the Shop is: Shop | California Marcketing<br>
+The right Shop page<br>
+Successfully clicked on Product 1<br>
+The right product page<br>
+Match: Product 1 and Product 1<br>
+The price for 1 piece is: 90<br>
+The color and quantity were set<br>
+The product was added to cart<br>
+Switched to frame<br>
+We are on the cart page<br>
+Right product in the cart<br>
+Correct quantity<br>
+Correct total price<br>
+Correct color<br>
+Click on the 'CheckOut' button<br>
+Switched to frame<br>
+We can't accept online orders right now<br>
+</p><p style="color:maroon;">AssertionError: Checkout wasn't successful</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">event_reservation (event reservation smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+Event section<br>
+Event 2<br>
+Thu, Jan 09<br>
+San Francisco<br>
+'RSVP' button was clicked<br>
+It's the middle event page<br>
+Correct event name<br>
+Correct event date<br>
+Correct event place<br>
+It`s the final event page<br>
+Correct event name<br>
+Correct event place<br>
+Submit button was clicked<br>
+The form was submitted<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">first_screen_text (localization testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+CALIFORNIA MARCKETING<br> A Full-Stack Creative Agency in NY<br> LET CALIFORNIA MARKETING GROW YOUR BUSINECS<br>
+Incorrect first line<br>
+Incorrect second line<br>
+Incorrect third line<br>
+</p><p style="color:maroon;">AssertionError: Incorrect text:<br>
+                                <br>
+
+-   'CALIFORNIA MARCKETING'<br>
++   'CALIFORNIA MARKETING'<br>
+
+-  'A Full-Stack Creative Agency in NY',<br>
+
++  'A Full-Stack Creative Agency in CA',<br>
+
+-  'LET CALIFORNIA MARKETING GROW YOUR BUSINECS'<br>
+
++  'LET CALIFORNIA MARKETING GROW YOUR BUSINESS'<br>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">get_in_touch (email address check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Get in touch' clickable<br>
+Right 'Get in Touch' button text<br>
+On site email: mailto:qasv.us@gmail.com.com<br>
+Correct email: mailto:qasv.us@gmail.com<br>
+</p><p style="color:maroon;">AssertionError: Incorrect email</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">header_menu_links (check links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the Blog is: Blog | California Marcketing<br>
+The right 'Blog' page<br>
+The title of the Shop is: Shop | California Marcketing<br>
+The right 'Shop' page<br>
+The title of the Servises is: Servises | California Marcketing<br>
+The right 'Servises' page<br>
+The title of the Home is: Home | California Marcketing<br>
+The right 'Home' page<br>
+All header links work correctly
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">icons_clickability (social network icons clickability)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Icons are clickable<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">lets_chat (online chat check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Chat is on the page<br>
+The message was sent in the chat<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">social_network_links (check all links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the page is: Facebook<br>
+We have Facebook logo<br>
+Check Facebook page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California (@AtSilicon) / �������<br>
+We have TW logo<br>
+The right TW page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California | ���������<br>
+We have VK logo<br>
+The right VK page<br>
+Back to the main page<br>
+The title of the page is: Sergey Efremov_USA - YouTube<br>
+We have YouTube logo<br>
+The right YouTube page<br>
+Back to the main page<br>
+The title of the page is: �������� ������������ | LinkedIn<br>
+Smt is wrong with LinkedIn logo<br>
+Check LinkedIn page<br>
+Back to the main page<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">subscribe_form (footer form smoke test)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Subscription form' was found<br>
+The email was sent<br>
+Submit button was clicked<br>
+</p><p style="color:maroon;">AssertionError: smt went wrong </p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">video_selection (search bar check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Search bar works<br>
+The right video is displayed<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 10, Pass: 6, Fail: 4 -- Duration: 246.22 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>WINDOWS_10_FIREFOX</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">cart_shopping (cart smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+The title of the Shop is: Shop | California Marcketing<br>
+The right Shop page<br>
+Successfully clicked on Product 1<br>
+The right product page<br>
+Match: Product 1 and Product 1<br>
+The price for 1 piece is: 90<br>
+The color and quantity were set<br>
+The product was added to cart<br>
+Switched to frame<br>
+We are on the cart page<br>
+Right product in the cart<br>
+Correct quantity<br>
+Correct total price<br>
+Correct color<br>
+Click on the 'CheckOut' button<br>
+Switched to frame<br>
+We can't accept online orders right now<br>
+</p><p style="color:maroon;">AssertionError: Checkout wasn't successful</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">event_reservation (event reservation smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+Event section<br>
+Event 2<br>
+Thu, Jan 09<br>
+San Francisco<br>
+'RSVP' button was clicked<br>
+It's the middle event page<br>
+Correct event name<br>
+Correct event date<br>
+Correct event place<br>
+It`s the final event page<br>
+Correct event name<br>
+Correct event place<br>
+Submit button was clicked<br>
+The form was submitted<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">first_screen_text (localization testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+CALIFORNIA MARCKETING<br> A Full-Stack Creative Agency in NY<br> LET CALIFORNIA MARKETING GROW YOUR BUSINECS<br>
+Incorrect first line<br>
+Incorrect second line<br>
+Incorrect third line<br>
+</p><p style="color:maroon;">AssertionError: Incorrect text:<br>
+                                <br>
+
+-   'CALIFORNIA MARCKETING'<br>
++   'CALIFORNIA MARKETING'<br>
+
+-  'A Full-Stack Creative Agency in NY',<br>
+
++  'A Full-Stack Creative Agency in CA',<br>
+
+-  'LET CALIFORNIA MARKETING GROW YOUR BUSINECS'<br>
+
++  'LET CALIFORNIA MARKETING GROW YOUR BUSINESS'<br>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">get_in_touch (email address check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Get in touch' clickable<br>
+Right 'Get in Touch' button text<br>
+On site email: mailto:qasv.us@gmail.com.com<br>
+Correct email: mailto:qasv.us@gmail.com<br>
+</p><p style="color:maroon;">AssertionError: Incorrect email</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">header_menu_links (check links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the Blog is: Blog | California Marcketing<br>
+The right 'Blog' page<br>
+The title of the Shop is: Shop | California Marcketing<br>
+The right 'Shop' page<br>
+The title of the Servises is: Servises | California Marcketing<br>
+The right 'Servises' page<br>
+The title of the Home is: Home | California Marcketing<br>
+The right 'Home' page<br>
+All header links work correctly
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">icons_clickability (social network icons clickability)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Icons are clickable<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">lets_chat (online chat check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Chat is on the page<br>
+The message was sent in the chat<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">social_network_links (check all links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the page is: Facebook<br>
+We have Facebook logo<br>
+Check Facebook page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California (@AtSilicon) / �������<br>
+We have TW logo<br>
+The right TW page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California | ���������<br>
+We have VK logo<br>
+The right VK page<br>
+Back to the main page<br>
+The title of the page is: Sergey Efremov_USA - YouTube<br>
+We have YouTube logo<br>
+The right YouTube page<br>
+Back to the main page<br>
+The title of the page is: �������� ������������ | LinkedIn<br>
+Smt is wrong with LinkedIn logo<br>
+Check LinkedIn page<br>
+Back to the main page<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">subscribe_form (footer form smoke test)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Subscription form' was found<br>
+The email was sent<br>
+Submit button was clicked<br>
+</p><p style="color:maroon;">AssertionError: smt went wrong </p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">video_selection (search bar check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Search bar works<br>
+The right video is displayed<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 10, Pass: 6, Fail: 4 -- Duration: 402.13 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>WINDOWS_10_EDGE</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">cart_shopping (cart smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+The title of the Shop is: Shop | California Marcketing<br>
+The right Shop page<br>
+Successfully clicked on Product 1<br>
+The right product page<br>
+Match: Product 1 and Product 1<br>
+The price for 1 piece is: 90<br>
+The color and quantity were set<br>
+The product was added to cart<br>
+Switched to frame<br>
+We are on the cart page<br>
+Right product in the cart<br>
+Correct quantity<br>
+Correct total price<br>
+Correct color<br>
+Click on the 'CheckOut' button<br>
+Switched to frame<br>
+We can't accept online orders right now<br>
+</p><p style="color:maroon;">AssertionError: Checkout wasn't successful</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">event_reservation (event reservation smoke testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing
+Event section<br>
+Event 2<br>
+Thu, Jan 09<br>
+San Francisco<br>
+'RSVP' button was clicked<br>
+It's the middle event page<br>
+Correct event name<br>
+Correct event date<br>
+Correct event place<br>
+It`s the final event page<br>
+Correct event name<br>
+Correct event place<br>
+Submit button was clicked<br>
+The form was submitted<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">first_screen_text (localization testing)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+CALIFORNIA MARCKETING<br> A Full-Stack Creative Agency in NY<br> LET CALIFORNIA MARKETING GROW YOUR BUSINECS<br>
+Incorrect first line<br>
+Incorrect second line<br>
+Incorrect third line<br>
+</p><p style="color:maroon;">AssertionError: Incorrect text:<br>
+                                <br>
+
+-   'CALIFORNIA MARCKETING'<br>
++   'CALIFORNIA MARKETING'<br>
+
+-  'A Full-Stack Creative Agency in NY',<br>
+
++  'A Full-Stack Creative Agency in CA',<br>
+
+-  'LET CALIFORNIA MARKETING GROW YOUR BUSINECS'<br>
+
++  'LET CALIFORNIA MARKETING GROW YOUR BUSINESS'<br>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">get_in_touch (email address check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Get in touch' clickable<br>
+Right 'Get in Touch' button text<br>
+On site email: mailto:qasv.us@gmail.com.com<br>
+Correct email: mailto:qasv.us@gmail.com<br>
+</p><p style="color:maroon;">AssertionError: Incorrect email</p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">header_menu_links (check links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the Blog is: Blog | California Marcketing<br>
+The right 'Blog' page<br>
+The title of the Shop is: Shop | California Marcketing<br>
+The right 'Shop' page<br>
+The title of the Servises is: Servises | California Marcketing<br>
+The right 'Servises' page<br>
+The title of the Home is: Home | California Marcketing<br>
+The right 'Home' page<br>
+All header links work correctly
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">icons_clickability (social network icons clickability)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Icons are clickable<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">lets_chat (online chat check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Chat is on the page<br>
+The message was sent in the chat<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">social_network_links (check all links lead to right pages)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+The title of the page is: Facebook<br>
+We have Facebook logo<br>
+Check Facebook page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California (@AtSilicon) / �������<br>
+We have TW logo<br>
+The right TW page<br>
+Back to the main page<br>
+The title of the page is: QA at Silicon Valley California | ���������<br>
+We have VK logo<br>
+The right VK page<br>
+Back to the main page<br>
+The title of the page is: Sergey Efremov_USA - YouTube<br>
+We have YouTube logo<br>
+The right YouTube page<br>
+Back to the main page<br>
+The title of the page is: �������� ������������ | LinkedIn<br>
+Smt is wrong with LinkedIn logo<br>
+Check LinkedIn page<br>
+Back to the main page<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">subscribe_form (footer form smoke test)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+'Subscription form' was found<br>
+The email was sent<br>
+Submit button was clicked<br>
+</p><p style="color:maroon;">AssertionError: smt went wrong </p><p style="color:maroon;">
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">video_selection (search bar check)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The title of the page is: Home | California Marcketing<br>
+Search bar works<br>
+The right video is displayed<br>
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 10, Pass: 6, Fail: 4 -- Duration: 261.47 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
