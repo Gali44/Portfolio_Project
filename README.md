@@ -2,7 +2,8 @@
 ### I've done a project to demonstrate some skills I have and some tools I can work with:
 
 BrowserStack <img src="https://d2h1nbmw1jjnl.cloudfront.net/company_directory_entries/company_logos/000/000/328/original/bstack_2x.png?1582638320" width="50" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;
-SQL <img src="https://cloudblogs.microsoft.com/uploads/prod/sites/32/2020/05/SQL.png" width="70" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;
+HTML <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" width="70" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;
+Allure <img src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4" width="70" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;
 Python <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" width="50" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;
 JavaScript <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" width="50" height="50" />&nbsp; &nbsp; &nbsp; &nbsp;  
 
